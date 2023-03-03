@@ -23,4 +23,4 @@ elif (age > 30 and (weight >= 120) or (weight <= 50)):
 
 else:
     age <= 30 and weight >= 50 or weight <= 120
-    print('Вы в хорошем физическом состоянии')
+    print('Вы в хорошем физической форме')
