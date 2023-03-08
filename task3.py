@@ -16,11 +16,12 @@ weight = int(input('Введите ваш вес, килограмм: '))
 # print(name: str, family_name: str, age: int, weight: int)
 
 if (age > 40) and (120 >= weight >= 50):
-    print('Требуется врачебный осмотр')
+    print('срочно требуется врачебный осмотр')
 
 elif (age > 30 and (weight >= 120) or (weight <= 50)):
-    print('Вам требуется заняться собой')
+    print(name, family_name, age, 'лет', 'вес',
+          weight, ' - срочно заняться собой')
 
 else:
     age <= 30 and weight >= 50 or weight <= 120
-    print('Вы в хорошем физической форме')
+    print(name, 'вы в хорошей физической форме')
