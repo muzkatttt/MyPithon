@@ -18,3 +18,14 @@ while i < len(friends):
 # for
 for friend in friends:
     print(friend)
+
+
+# для строки
+for letter in friend_name:
+    print(letter)
+
+# для кортежа
+for role in roles:
+    print(role)
+
+print('end')
