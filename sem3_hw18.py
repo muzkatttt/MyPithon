@@ -6,3 +6,18 @@
 массиве. В последующих строках записаны N
 целых чисел Ai. Последняя строка содержит число X
 """
+def element_search():
+    n = int(input('Введите число N: \t'))
+    list = [i for i in range (1, n)]
+    print(list)
+
+    x = int(input('Введите искомое число Х в массиве: \t'))
+    find = [0]
+    for i in list:
+        if i == x:
+            i = find
+            i += 1
+
+    print(find)
+
+element_search()

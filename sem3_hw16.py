@@ -6,9 +6,9 @@
 в массиве. В последующих строках записаны N
 целых чисел Ai.
 Последняя строка содержит число X
-НЕ ДОДЕЛАЛА
+
 """
-def how_much():
+def how_much_num():
     n = int(input('Введите размер массива: \n'))
     print('Введите элементы массива: ')
     results = [int(input()) for i in range(n)]
@@ -20,26 +20,12 @@ def how_much():
         for elem in results[:]:
             if elem == x:
                 count += 1
-                if count == n:
-                    print(f'Число {x} встречается {int(count)} раз')
+                print(f'Число {x} встречается {int(count)} раз')
 
             else:
-                print(f'Числа {x} нет в массиве')
-                count += 1
+                if elem == 0:
+                    print(f'Числа {x} нет в массиве')
+                    count += 1
         return results
 
-"""
-    i = 0
-    while count < len(results):
-        if x == results[:]:
-            count += 1
-            print(f'Число {x} встречается {count} раз')
-            i += 1
-
-        else:
-            count += 1
-            print(f'Числа {x} нет в массиве')
-            break
-        i += 1
-"""
-how_much()
+how_much_num()
