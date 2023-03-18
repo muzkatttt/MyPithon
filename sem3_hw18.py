@@ -7,17 +7,17 @@
 целых чисел Ai. Последняя строка содержит число X
 """
 def element_search():
-    n = int(input('Введите число N: \t'))
-    list = [i for i in range (1, n)]
+    n = int(input('Введите число N: \n'))
+    list = [i for i in range(1, n)]
     print(list)
 
-    x = int(input('Введите искомое число Х в массиве: \t'))
-    find = [0]
-    for i in list:
-        if i == x:
-            i = find
-            i += 1
-
-    print(find)
+    x = int(input('Введите искомое число Х в массиве: \n'))
+    if x in list:
+        print(f'Cамый близкий по величине элемент к X = {x}')
+    else:
+        if x > len(list):
+            print(f'Cамый близкий по величине элемент к {x} = {len(list)}')
+        elif x < 1:
+            print(f'Cамый близкий по величине элемент к {x} = 1')
 
 element_search()

@@ -8,24 +8,19 @@
 Последняя строка содержит число X
 
 """
-def how_much_num():
-    n = int(input('Введите размер массива: \n'))
-    print('Введите элементы массива: ')
-    results = [int(input()) for i in range(n)]
-    x = int(input('Какое число ищем в массиве? \n'))
-    print(list(results))
+
+def how_much_num(results, n, x):
     count = 0
+    for i in range(n):
+        if x == results[i]:
+            count += 1
+    print(f'Число {x} встречается в массиве {count} раз(-а)')
 
-    while count <= n:
-        for elem in results[:]:
-            if elem == x:
-                count += 1
-                print(f'Число {x} встречается {int(count)} раз')
 
-            else:
-                if elem == 0:
-                    print(f'Числа {x} нет в массиве')
-                    count += 1
-        return results
+n = int(input('Введите размер массива: \n'))
+print('Введите элементы массива: ')
+results = [int(input()) for _ in range(n)]
+print(list(results))
+x = int(input('Какое число ищем в массиве? \n'))
+how_much_num(results, n, x)
 
-how_much_num()
