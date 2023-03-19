@@ -12,3 +12,10 @@ def degree_num():
         count *= 2
 
 degree_num()
+# второй вариант написания кода
+"""
+n = int(input('Введите число N: '))
+list_1 = [i for i in range(1, n) if i % 2 == 0]
+
+print(f'{list_1}')
+"""
