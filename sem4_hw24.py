@@ -15,24 +15,3 @@
 пример
  4 -> 1 2 3 4 9
 """
-
-from random import randint
-n = int(input(random.randint(1, 4)))
-print(n)
-a = list(map(random.randint(1, 1001) for _ in range(n)))
-# n = int(input('Введите количество кустов:\n'))
-# a = list(map(int, input('Введите количество ягод (через пробел): \n').split()))
-
-
-max_berries = 0
-
-for i in range(n):
-	cursum = sum(a[i:i+3])
-	if cursum > max_berries:
-		max_berries = cursum
-	elif a[0] + a[-1] + a[-2] > max_berries:
-		max_berries = a[0] + a[-1] + a[-2]
-	elif a[0] + a[1] + a[-1] > max_berries:
-		max_berries = a[0] + a[1] + a[-1]
-
-print(f'Количество ягод, собранных манипулятором равно {max_berries}')

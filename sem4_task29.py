@@ -28,3 +28,24 @@ n = int(input())
  if max_number < n:
  n = max_number
 """''
+
+list1 = [1, 2, 3, 4, 5, 6, 7, 10, 10, 15, 0, 20, 30, 15, 31, 0]
+
+
+def big_finder(list1: list):
+    temp_list = [list1[i] for i in range(list1.index(0))]
+    print(temp_list)
+    return f'The biggest number is>> {max(temp_list)}'
+
+
+print(big_finder(list1))
+
+# 2-й вариант решения задачи
+# max_number = -1
+# while True:
+#     n = int(input())
+#     if n == 0:
+#         break
+#     if n > max_number:
+#         max_number = n
+# print(max_number)
