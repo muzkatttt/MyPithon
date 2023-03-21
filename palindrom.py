@@ -13,17 +13,20 @@ def is_palindrome(num):
     else:
         return False
 
-is_palindrome(123321)
-
+is_palindrome(1221)
+"""
 def infinite_sequence():
     num = 0
     while True:
         yield num
         num += 1
+"""
 
-for i in infinite_sequence():
-    pal = is_palindrome(i)
-    if pal: print(pal)
 
-pal = int(input('Введите число \n'))
+
+for num in range(is_palindrome(1221)):
+    #pal = is_palindrome(1000) #
+    if num == is_palindrome(num):
+        print('Да')
+        break
 

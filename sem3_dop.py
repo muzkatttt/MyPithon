@@ -32,13 +32,14 @@ dictionary = {'A':1, 'E':1, 'I':1, 'O':1, 'U' :1, 'L' :1, 'N' :1,
     'П' :2, 'У' :2, 'Б' :3, 'Г' :3, 'Ё' :3, 'Ь' :3, 'Я' :3, 'Й' :4,
     'Ы' :4, 'Ж' :5, 'З' :5, 'Х' :5, 'Ц' :5, 'Ч' :5, 'Ш' :8, 'Э' :8,
     'Ю' :8, 'Ф' :10, 'Щ':10, 'Ъ' :10}
-#print(len(dictionary))
+# print(len(dictionary)) проверка количество элементов в словаре
 
 word = str(input('Введите слово: \n'))
 new_word = [i.upper() for i in word]
-print(type(new_word))
+# print(type(new_word)) проверка типа new_word
 print(new_word)
-print(sum([k for i in new_word for k, v in dictionary.items() if i in v]))
+print(f'Стоимость введенного слова равна {sum([dictionary.get(i) for i in new_word])}')
+#print(sum([j for i in new_word for j, k in dictionary.items() if i in k]))
 #list_1 = str(new_word.split(' '))
 #print(type(list_1))
 #print(list_1)
