@@ -15,3 +15,16 @@
 пример
  4 -> 1 2 3 4 9
 """
+
+n = int(input('Введите количество кустов: \n'))
+array = list()
+for _ in range(n):
+    a = int(input('Введите количество ягод на каждом из кустов: \n'))
+    array.append(a)
+
+array_count = list()
+for i in range(len(array) - 1):
+    array_count.append(array[i - 1] + array[i] + array[i + 1])
+array_count.append(array[-2] + array[-1] + array[0])
+print(array_count)
+print(f'Максимальное количество ягод будет собрано на кусте №{i + 1} и составит {max(array_count)} ягод(-ы, -у)')

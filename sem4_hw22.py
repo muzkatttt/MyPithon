@@ -23,8 +23,8 @@ print(size_n)
 # print(type(size_n)) # проверка типа
 print(size_m)
 # print(type(size_m)) # проверка типа
-result = size_n & size_m
-#result = size_n.intersection(size_m)
+# result = size_n & size_m
+result = size_n.intersection(size_m)
 print(f'В введенных множествах встречаются числа: {list(result)}')
 
 #эталонный вариант
