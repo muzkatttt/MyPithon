@@ -1,6 +1,6 @@
 # импорт отдельных модулей из библиотеки
 
-import random as rd
+import task_random as rd
 import math
 
 print(math.pi)  # через точку указываем функции из модуля math

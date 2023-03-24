@@ -5,7 +5,7 @@
 то функция должна вернуть None. Проверьте
 работу функций в этом же модуле
 """
-import random
+import task_random
 def get_random(input_list):
     if input_list:
         result = random.choice(input_list)

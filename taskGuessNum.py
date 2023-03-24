@@ -24,7 +24,7 @@ while True:
 
 # второе решение с помощью цикла (оптимальное)
 
-import random
+import task_random
 
 number = random.randint(1, 100)
 # print(number)  # для тестирования программы

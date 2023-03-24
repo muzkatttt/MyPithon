@@ -1,6 +1,6 @@
 # Напишите программу угадай число для нескольких пользователей
 
-import random
+import task_random
 
 number = random.randint(1, 100)
 # print(number)  # вывод числа на экран для тестирования программы

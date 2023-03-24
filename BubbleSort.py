@@ -1,6 +1,6 @@
 # Пузырьковая сортировка от меньшего к большему
 
-from random import randint
+from task_random import randint
 
 N = 30
 a = []

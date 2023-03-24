@@ -26,7 +26,7 @@
 использовать этот способ или придумать свой.
 """
 
-import random
+import task_random
 
 min_number = 1
 max_number = 100

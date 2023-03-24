@@ -6,7 +6,7 @@
 Input:    6 -> -20 30 -40 50 10 -10
 Output: 2
 """
-from random import randint
+from task_random import randint
 
 
 analyzed_period = int(input('Укажите анализируемый период, дней:\n>>> '))

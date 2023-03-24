@@ -1,5 +1,5 @@
-# быстрая сортировка Хоара
-from random import random
+ # быстрая сортировка Хоара
+from task_random import random
 
 
 nums = [4, 1, 6, 3, 2, 7, 8]

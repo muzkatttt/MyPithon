@@ -9,7 +9,7 @@ shuffle - перемешивает последовательность
 random - случайное число от 0 до 1
 sample - список длиной k из последовательности
 """
-from random import randint, choice, sample, shuffle
+from task_random import randint, choice, sample, shuffle
 # 1. Загадать случайное число от 0 до 100
 print(randint(1, 100))
 
