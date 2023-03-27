@@ -17,15 +17,6 @@ def sequence_numbers(n):
 sequence_numbers(int(input('Введите число n: \n')))
 #print(n, reverse=True)
 
-
-
-
-
-
-
-
-
-
 """ решение без рекурсии
     def main():
         input_file = open("input.txt", "r")

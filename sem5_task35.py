@@ -52,7 +52,7 @@ def main():
     checking_number(n)
 
 
-if name == 'main':
+if __name__ == 'main':
     main()
 
 
