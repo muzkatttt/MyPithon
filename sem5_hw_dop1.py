@@ -18,7 +18,7 @@
 1 2 3 4 5 6 3 1 2 5 3 -> 5
 
 """
-
+"""
 max1 = int(input('Введите число: \n'))
 temp = int(input('Введите 2-е число: \n'))
 
@@ -37,7 +37,7 @@ while temp != 0:
 
 print(max2)
 #print(max2.pop())
-
+"""
 """
 max = 0
 premax = 0
