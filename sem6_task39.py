@@ -148,4 +148,17 @@ print(n, m)
 n_m = [i for i in n if i not in m]
 print(*n_m)
 print(*n_minus_m(n, m))
+
+# решение от Алексея
+a = int(input('Введите кол-во элементов N множества: '))
+musA = set(int(input('Введите элементы N множества: ')) for i in range(a))
+
+b= int(input('Введите кол-во элементов M множества: '))
+musB = set(int(input('Введите элементы M множества: ')) for i in range(b))
+
+i = musA.intersection(musB)                              
+print(f'Совпадающие элементы в массивах {i}')
+
+l = musA.difference(musB) 
+print(f'НЕ cопадающие элементы в массивах {l}')
 """
