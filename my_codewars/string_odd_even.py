@@ -14,6 +14,18 @@ s были сгруппированы, а группы разделены про
 0 считается четным показателем. Все входные строки допустимы без пробелов
 
 """
-def sort_my_string(s):
-    # Your code here =)
-    return
+def sort_my_string(s: str):
+    s = 'CodeWars'
+    s1 = list(s.split())
+    print(s1)
+    odd = list()
+    even = list()
+    s1[i] = s1[0]
+    new_string = ''
+    for i in s1:
+        if s1[i] % 2 != 0:
+            i.append(odd)
+        i.append(even)
+        print(odd + even)
+    #return
+sort_my_string('string')
