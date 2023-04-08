@@ -43,8 +43,6 @@ def print_phonebook(entity):
     print(f'{entity}')
 
 
-# имена, указанные в объявлении функции, называются параметрами,
-# тогда как значения, которые вы передаёте в функцию при её вызове, – аргументами.
 def find_contact(contacts: list) -> list: # можно создать проверку наличия значений
     what = input('Кого ищем?\n>>> ')
     found = list(filter(lambda el: what in el['first_name'] or what in el['second_name'], contacts))

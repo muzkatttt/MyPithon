@@ -1,0 +1,32 @@
+[
+  {
+    "first_name": "Михаил",
+    "second_name": "Сидоров",
+    "phone": "135"
+  },
+  {
+    "first_name": " Алена",
+    "second_name": "Попова",
+    "phone": "235"
+  },
+  {
+    "first_name": "Вадим",
+    "second_name": "Алексеев",
+    "phone": "456"
+  },
+  {
+    "first_name": "Иван",
+    "second_name": "Коровин",
+    "phone": "678"
+  },
+  {
+    "first_name": "Инна",
+    "second_name": "Иголкина",
+    "phone": "457"
+  },
+  {
+    "first_name": "Катя",
+    "second_name": "Родионова",
+    "phone": "444"
+  }
+]
