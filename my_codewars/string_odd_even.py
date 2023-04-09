@@ -28,24 +28,37 @@ s были сгруппированы, а группы разделены про
 
 
 def sort_my_string(s: str) -> str:
-    even = [i + 2 for i in range(0, len(str))]
-    print(type(even))
-    #    i.append(even)
-    #    return even
-
-    odd = [i + 2 for i in range(1, len(str))]
+    even = str()
+    odd = str()
+    s = 'CodeWars'
+    for i in range(0, len(s), 2):
+        even += s[i]
+    print(even)
+    for i in range(1, len(s), 2):
+        odd += s[i]
     print(odd)
-    #    i.append(odd)
-    #    return odd
     print(even + odd)
 
 
-sort_my_string(string='some_string')
+sort_my_string(s='CodeWars')
 
 # def sort_my_string(s: str):
 #     s = 'CodeWars'
-#     text = ''.join([i for i in s if s.index(i) % 2]) + ' ' + ''.join([i for i in s if not s.index(i) % 2])
+#     text = ''.join([i for i in s if not s.index(i) % 2]) + '' + ''.join([i for i in s if s.index(i) % 2], 2)
 #     print(text)
 #
-#
 # sort_my_string('string')
+
+'''
+def sort_my_string(s):
+    odd, even = [], []
+    for i, char in enumerate(s):
+        even.append(char) if i % 2 == 0 else odd.append(char)
+    return "".join(even) + " " + "".join(odd)
+
+'''
+
+"""
+def sort_my_string(S):
+    return S[::2]+' '+S[1::2]
+"""
