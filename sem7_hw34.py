@@ -31,3 +31,17 @@ def find_rhythm(vini_puh):
 
 print(find_rhythm(vini_puh))
 
+"""
+Кирилл поделился 
+def is_rhythm(poem: str, condition='аеёиоуыэюя'):
+    return len(set(sum(map(lambda el: phrase.lower().count(el), condition)) for phrase in poem.split())) < 2
+
+
+def main():
+    print('Парам пам-пам' if is_rhythm('пара-ра-рам рам-пам-папам па-ра-па-дам и-ру-ри-дам') else 'Пам парам')
+
+
+if __name__ == '__main__':
+    main()
+"""
+

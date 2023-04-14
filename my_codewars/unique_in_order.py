@@ -15,9 +15,9 @@ original order of elements.
 
 import numpy as np
 def unique_in_order(sequence):
-    string = 'AAAABBBCCDAABBB'
+    sequence = 'AAAABBBCCDAABBB'
     list1 = []
-    for i in string:
+    for i in sequence:
         if not list1:
             list1.append(i)
         elif list1[-1] != i:
