@@ -6,6 +6,6 @@
 import pandas as pd
 f = pd.read_csv('sample_data/california_housing_train.csv')
 
-f[f['population'] <= 500]['median_house_value'].median()
+f[f['population'] <= 500]['median_house_value'].mean()
 
 """

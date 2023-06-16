@@ -10,6 +10,8 @@ of the final pair with an underscore ('_').
 символом подчеркивания ('_').
 """
 
+
 def solution(s):
-    arr = []
+    s = []
     for i in s:
+    return result
