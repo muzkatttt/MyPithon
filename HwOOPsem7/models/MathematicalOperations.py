@@ -1,33 +1,20 @@
+from AbstractMethods import Abstract_mathematical
 
+class Calculate(Abstract_mathematical):
 
-class Calculate():
-    def __init__
+    def __init__(self, a, b):
+        super().__init__(self, a, b)
+        self.results = self.results
 
-what = input( "Какое действие? (+, -. *, /, ): ") # что выбираем + или -
-# добавляем float для перевода строки в число
-a = float( input("Введи первое число: ") ) # присваиваем тут переменную
-# добавляем float для перевода строки в число
-b = float( input( "Введи второе число: ") ) # присваиваем тут переменную
+    def addition(self, a, b):
+        return a + b
 
-if what == "+":  # если ввели +
-    c = a + b  # тогда будет сложение
-    print("Результат: " + str(c)) # Ответ
+    def substraction(self, a, b):
+        return a - b
 
-elif what == "-":  # если ввели -
-    c = a - b  # тогда будет вычитание
-    print("Результат: " + str(c))  # Ответ
+    def multiplication(self, a, b):
+        return a * b
 
-elif what == "*":  # если ввели *
-    c = a * b  # тогда будет умножение
-    print("Результат: " + str(c))  # Ответ
-
-elif what == "/":  # если ввели /
-    c = a / b  # тогда будет деление
-    print("Результат: " + str(c))  # Ответ
-
-elif what == "":  # если ввели
-    c = a ** b  # тогда будет возведение во второе число
-    print("Результат: " + str(c))  # Ответ
-else:
-    print("Выбрана неверная операция!")
+    def division(self, a, b):
+        return a / b
 
