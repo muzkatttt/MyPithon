@@ -1,20 +1,41 @@
-from AbstractMethods import Abstract_mathematical
+from models.AbstractMethods import Abstract_mathematical
 
 class Calculate(Abstract_mathematical):
+    __a: complex
+    __b: complex
 
-    def __init__(self, a, b):
-        super().__init__(self, a, b)
-        self.results = self.results
+    @property
+    def a(self):
+        return self.__a
 
-    def addition(self, a, b):
-        return a + b
+    @a.setter
+    def a(self, a: complex):
+        self.__a = a
 
-    def substraction(self, a, b):
-        return a - b
+    @property #
+    def b(self):
+        return self.__b
 
-    def multiplication(self, a, b):
-        return a * b
+    @a.setter
+    def b(self, b: complex):
+        self.__b = b
 
-    def division(self, a, b):
-        return a / b
+    def addition(self):
+        return self.a + self.b
+
+    def substraction(self):
+        return self.a - self.b
+
+    def multiplication(self):
+        return self.a * self.b
+
+    def division(self):
+        return self.a / self.b
+
+
+a = Calculate()
+b = Calculate()
+
+
+
 
