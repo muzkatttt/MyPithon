@@ -6,7 +6,7 @@
 # то необходимо написать документ, каким образом можно запустить приложение (что необходимо установить,
 # каким образом запускать и т.п.).
 
-from .models.MathematicalOperations import Calculate
+from models.MathematicalOperations import Calculate
 
 
 def main():

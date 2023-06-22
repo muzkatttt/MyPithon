@@ -1,5 +1,6 @@
 from models.AbstractMethods import Abstract_mathematical
 
+
 class Calculate(Abstract_mathematical):
     __a: complex
     __b: complex
@@ -12,7 +13,7 @@ class Calculate(Abstract_mathematical):
     def a(self, a: complex):
         self.__a = a
 
-    @property #
+    @property  #
     def b(self):
         return self.__b
 
@@ -35,7 +36,3 @@ class Calculate(Abstract_mathematical):
 
 a = Calculate()
 b = Calculate()
-
-
-
-
