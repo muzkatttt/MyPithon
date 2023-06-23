@@ -6,29 +6,14 @@
 # то необходимо написать документ, каким образом можно запустить приложение (что необходимо установить,
 # каким образом запускать и т.п.).
 
-from models.MathematicalOperations import Calculate
+from controller.Controller import Controller
 
 
 def main():
 
-    result = Calculate()
-    result.a = complex(input('Введите число a: ')) # комплексное число имеет вид a - bj
-    result.b = complex(input('Введите число b: '))
-    operator = input('Какое действие? (+, -. *, / ): \n')
-
-    match operator:
-        case '+':
-            print(result.addition())
-
-        case '-':
-            print(result.substraction())
-        case '*':
-            print(result.multiplication())
-        case '/':
-            print(result.division())
-        case _:
-            raise Exception
+    controller = Controller()
+    controller.start()
 
 
-if __name__ == '__main__':
-    main()
+    if __name__ == '__main__':
+        main()

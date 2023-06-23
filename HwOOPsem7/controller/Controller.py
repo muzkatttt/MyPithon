@@ -1,31 +1,34 @@
 from typing import Any
-from unittest import result
-
-from models.MathematicalOperations import Calculate
+import models.Calculate
+import view
+from models.Calculate import Calculate
 from view.UserView import UserView
 
 class Controller:
-
-    __models: Any # объявление атрибутов класса с любым типом данных
+    __models: Any  # объявление атрибутов класса с любым типом данных
     __view: Any
 
     def __init__(self) -> None:
-        __models = Calculate() #назначение переменных
+        __models = Calculate()  # назначение переменных
         __view = UserView()
 
-    def start(self):
-        pass
 
     def switch_case(self, a, b, operator):
         match operator:
             case '+':
-                print(result.addition())
+                UserView.print_result(models.Calculate.Calculate.addition())
 
             case '-':
-                print(result.substraction())
+                UserView.print_result(models.Calculate.Calculate.substraction())
+
             case '*':
-                print(result.multiplication())
+                UserView.print_result(models.Calculate.Calculate.multiplication())
+
             case '/':
-                print(result.division())
+                UserView.print_result((models.Calculate.Calculate.division()))
+
             case _:
                 raise Exception
+
+    def start(self):
+        UserView.input_from_user()

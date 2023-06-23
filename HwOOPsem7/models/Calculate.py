@@ -5,6 +5,11 @@ class Calculate(Abstract_mathematical):
     __a: complex
     __b: complex
 
+    def __init__(self):
+        super().__init__()
+        self.__a = 0
+        self.__b = 0
+
     @property
     def a(self):
         return self.__a
@@ -13,7 +18,7 @@ class Calculate(Abstract_mathematical):
     def a(self, a: complex):
         self.__a = a
 
-    @property  #
+    @property
     def b(self):
         return self.__b
 
@@ -32,7 +37,3 @@ class Calculate(Abstract_mathematical):
 
     def division(self):
         return self.a / self.b
-
-
-a = Calculate()
-b = Calculate()
