@@ -25,23 +25,28 @@ class Calculate(Abstract_mathematical):
     def b(self):
         return self.__b
 
-    @a.setter
+    @b.setter
     def b(self, b: complex):
         self.__b = b
 
     def addition(self):
+        Logger.save_to_file("Найдена сумма чисел");
         return self.a + self.b
 
+
     def substraction(self):
+        Logger.save_to_file("Найдена разность чисел");
         return self.a - self.b
 
     def multiplication(self):
+        Logger.save_to_file("Найдено произведение чисел");
         return self.a * self.b
 
     def division(self):
+        Logger.save_to_file("Найдено частное чисел");
         return self.a / self.b
 
-    def switch_case(self, a, b, operator):
+    def switch_case(self, __a, __b, operator):
         match operator:
             case '+':
                 UserView.print_result(models.Calculate.Calculate.addition())

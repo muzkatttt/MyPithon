@@ -7,11 +7,13 @@
 # каким образом запускать и т.п.).
 
 from controller.Controller import Controller
+from view.UserView import UserView
 
 
 def main():
     controller = Controller()
     controller.start()
+    view.input_from_user()
 
 
     if __name__ == '__main__':

@@ -1,10 +1,9 @@
-import logging
-
 
 class Logger:
-    result = ''
+    log_result = ''
 
     def __init__(self, log):
+        self.choice = None
         self.log = log
 
     def ask_from_user(self, string):
@@ -21,6 +20,6 @@ class Logger:
 
     def history(self):
         reader = open('log.txt', 'r')
-        result = reader.read()
+        log_result = reader.read()
         reader.close()
-        return result
+        return log_result

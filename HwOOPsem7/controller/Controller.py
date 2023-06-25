@@ -16,7 +16,7 @@ class Controller:
         UserView.input_from_user()
 
     def ask_for_log(self):
-        if self.result == '':
+        if self.log_result == '':
             return
-        log = Logger(self.result)
-        log.ask_from_user('Cохранить в log.txt? [y/n]\n')
+        log_result = Logger(self.log_result)
+        log_result.ask_from_user('Cохранить в log.txt? [y/n]\n')
