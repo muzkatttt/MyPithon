@@ -1,6 +1,6 @@
 class UserView:
     @staticmethod
-    def input_from_user():
+    def input_from_user(self):
         a = input('Введите комплексное число вида a+bj, где a и b числа: \n>> ')
         b = input('Введите комплексное число вида a+bj, где a и b числа: \n>> ')
         operator = input('Выберите действие (+, -, *, / ): \n')

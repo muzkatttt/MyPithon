@@ -1,4 +1,7 @@
+import models
+from logger.Logger import Logger
 from models.AbstractMethods import Abstract_mathematical
+from view.UserView import UserView
 
 
 class Calculate(Abstract_mathematical):
@@ -37,3 +40,20 @@ class Calculate(Abstract_mathematical):
 
     def division(self):
         return self.a / self.b
+
+    def switch_case(self, a, b, operator):
+        match operator:
+            case '+':
+                UserView.print_result(models.Calculate.Calculate.addition())
+
+            case '-':
+                UserView.print_result(models.Calculate.Calculate.substraction())
+
+            case '*':
+                UserView.print_result(models.Calculate.Calculate.multiplication())
+
+            case '/':
+                UserView.print_result((models.Calculate.Calculate.division()))
+
+            case _:
+                raise Exception
