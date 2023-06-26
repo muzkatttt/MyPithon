@@ -8,7 +8,7 @@ class Abstract_mathematical(ABC):
         pass
 
     @abstractmethod
-    def substraction(self):
+    def subtraction(self):
         pass
 
     @abstractmethod
