@@ -1,17 +1,16 @@
-import models
-from logger.Logger import Logger
 from models.AbstractMethods import Abstract_mathematical
-from view.UserView import UserView
 
 
 class Calculate(Abstract_mathematical):
     __a: complex
     __b: complex
+    __operator: str
 
-    def __init__(self):
+    def __init__(self, left: str, right: str, operator: str):
         super().__init__()
-        self.__a = 0
-        self.__b = 0
+        self.a = complex(left)
+        self.b = complex(right)
+        self.operator = operator
 
     @property
     def a(self):
@@ -29,36 +28,43 @@ class Calculate(Abstract_mathematical):
     def b(self, b: complex):
         self.__b = b
 
-    def addition(self):
-        Logger.save_to_file("Найдена сумма чисел");
+    @property
+    def operator(self) -> str:
+        return self.__operator
+
+    @operator.setter
+    def operator(self, operator: str):
+        self.__operator = operator
+
+    def addition(self) -> complex:
+        # Logger.save_to_file("Найдена сумма чисел")
         return self.a + self.b
 
-
-    def substraction(self):
-        Logger.save_to_file("Найдена разность чисел");
+    def subtraction(self) -> complex:
+        # Logger.save_to_file("Найдена разность чисел")
         return self.a - self.b
 
-    def multiplication(self):
-        Logger.save_to_file("Найдено произведение чисел");
+    def multiplication(self) -> complex:
+        # Logger.save_to_file("Найдено произведение чисел")
         return self.a * self.b
 
-    def division(self):
-        Logger.save_to_file("Найдено частное чисел");
+    def division(self) -> complex:
+        # Logger.save_to_file("Найдено частное чисел")
         return self.a / self.b
 
-    def switch_case(self, __a, __b, operator):
-        match operator:
+    def get_result(self) -> complex:
+        match self.operator:
             case '+':
-                UserView.print_result(models.Calculate.Calculate.addition())
+                return self.addition()
 
             case '-':
-                UserView.print_result(models.Calculate.Calculate.substraction())
+                return self.subtraction()
 
             case '*':
-                UserView.print_result(models.Calculate.Calculate.multiplication())
+                return self.multiplication()
 
             case '/':
-                UserView.print_result((models.Calculate.Calculate.division()))
+                return self.division()
 
             case _:
                 raise Exception
